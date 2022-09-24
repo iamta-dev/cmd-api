@@ -1,6 +1,8 @@
 .PHONY: get-test
 
+# fix is my-pc
 PUBLIC_KEY_PATH=/Users/tazgg/Documents/xspring/key/brokerage-ndid-node-dev.pem
+
 EC2_USER=ec2-user
 EC2_HOST=ec2-52-76-246-88.ap-southeast-1.compute.amazonaws.com
 APP_BASE_URL=http://sit.ndid.co.th:4000/f65993877940c6c2550dd342
