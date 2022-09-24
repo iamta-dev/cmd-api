@@ -32,14 +32,14 @@ post-test:
 # Use cmd on remote-server 
 get-idp:
 	curl --request GET \
-  		--url $(API_BAST_URL)/utility/idp \
+  		--url $(APP_BASE_URL)/utility/idp \
   		--header "accept-language: en-US,en;q=0.9,th;q=0.8" \
   		--header "content-type: application/json;charset=UTF-8" \
 		| python3 -mjson.tool
 
 save-idp:
 	curl --request GET \
-  		--url $(API_BAST_URL)/utility/idp \
+  		--url $(APP_BASE_URL)/utility/idp \
   		--header "accept-language: en-US,en;q=0.9,th;q=0.8" \
   		--header "content-type: application/json;charset=UTF-8" \
 		| python3 -mjson.tool > ./response/idp.json
